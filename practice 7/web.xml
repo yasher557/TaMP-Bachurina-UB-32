@@ -1,0 +1,19 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Определение сервлета -->
+    <servlet>
+        <servlet-name>Table</servlet-name>
+        <servlet-class>Table</servlet-class>
+    </servlet>
+
+    <!-- Маппинг сервлета на URL -->
+    <servlet-mapping>
+        <servlet-name>Table</servlet-name>
+        <url-pattern>/generateTable</url-pattern>
+    </servlet-mapping>
+
+</web-app>
